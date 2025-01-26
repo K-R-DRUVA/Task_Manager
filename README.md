@@ -1,5 +1,7 @@
 # Task_Manager
-Self hosting Backend Website[Task Manager]
+
+## 📖 About
+Task Manager is a sleek, modern web application that helps you organize your daily tasks with style - featuring a dark theme, smooth animations, and an intuitive interface that makes task management a breeze.
 
 ## 📝 Description
 
