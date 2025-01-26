@@ -89,3 +89,183 @@ Built using modern web technologies:
 - **Server**: Express.js server
 
 This Task Manager combines functionality with aesthetic appeal, creating an efficient and enjoyable task management experience for users who appreciate both form and function.
+
+## 🚀 Getting Started
+
+### Prerequisites
+Before running this project, make sure you have the following installed:
+- [Node.js](https://nodejs.org/) (v14.0.0 or higher)
+- [npm](https://www.npmjs.com/) (usually comes with Node.js)
+- A modern web browser (Chrome, Firefox, Safari, or Edge)
+
+### Step-by-Step Setup Guide
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/yourusername/task-manager.git
+   cd task-manager
+   ```
+
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+   This will install:
+   - express
+   - ejs
+   - body-parser
+   - other required packages
+
+3. **Environment Setup**
+   ```bash
+   # Create a .env file in the root directory
+   touch .env
+
+   # Add the following configurations
+   PORT=3000
+   NODE_ENV=development
+   ```
+
+4. **Start the Application**
+   ```bash
+   # Development mode
+   npm run dev
+
+   # Production mode
+   npm start
+   ```
+
+5. **Access the Application**
+   - Open your browser
+   - Visit `http://localhost:3000`
+   - You should see the Task Manager interface
+
+### Project Structure
+
+### Development Guidelines
+
+1. **Making Changes**
+   - CSS styles are in `public/stylesheets/styles.css`
+   - Main template is in `views/index.ejs`
+   - Server logic is in `index.js`
+
+2. **Adding New Features**
+   - Create a new branch for each feature
+   - Follow the existing code style
+   - Test thoroughly before committing
+
+3. **Running Tests**
+   ```bash
+   npm test
+   ```
+
+### Troubleshooting Common Issues
+
+1. **Port Already in Use**
+   ```bash
+   # Kill the process using the port
+   lsof -i :3000
+   kill -9 PID
+   ```
+
+2. **Node Modules Issues**
+   ```bash
+   # Remove node_modules and reinstall
+   rm -rf node_modules
+   npm install
+   ```
+
+3. **Database Connection** (for future implementation)
+   - Check your database credentials
+   - Ensure database service is running
+   - Verify network connectivity
+
+### Development Mode Features
+- Live reload enabled
+- Detailed error messages
+- Debug logging
+- Performance monitoring
+
+### Production Deployment
+1. **Build the Project**
+   ```bash
+   npm run build
+   ```
+
+2. **Environment Variables**
+   - Set `NODE_ENV=production`
+   - Configure proper port settings
+   - Set up security parameters
+
+3. **Deployment Platforms**
+   - Heroku: Ready to deploy
+   - Vercel: Supported
+   - AWS: Compatible
+   - Docker: Dockerfile provided
+
+### Support and Updates
+- Check for updates regularly: `npm update`
+- Report issues on GitHub
+- Join our community discussions
+- Follow the project's social media
+
+This getting started guide should help new developers:
+1. Set up the project quickly
+2. Understand the project structure
+3. Start development immediately
+4. Troubleshoot common issues
+5. Deploy to production effectively
+
+This Task Manager combines functionality with aesthetic appeal, creating an efficient and enjoyable task management experience for users who appreciate both form and function.
+
+## 🚀 Getting Started
+
+### Prerequisites
+Before running this project, make sure you have the following installed:
+- [Node.js](https://nodejs.org/) (v14.0.0 or higher)
+- [npm](https://www.npmjs.com/) (usually comes with Node.js)
+- A modern web browser (Chrome, Firefox, Safari, or Edge)
+
+### Step-by-Step Setup Guide
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/yourusername/task-manager.git
+   cd task-manager
+   ```
+
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+   This will install:
+   - express
+   - ejs
+   - body-parser
+   - other required packages
+
+3. **Environment Setup**
+   ```bash
+   # Create a .env file in the root directory
+   touch .env
+
+   # Add the following configurations
+   PORT=3000
+   NODE_ENV=development
+   ```
+
+4. **Start the Application**
+   ```bash
+   # Development mode
+   npm run dev
+
+   # Production mode
+   npm start
+   ```
+
+5. **Access the Application**
+   - Open your browser
+   - Visit `http://localhost:3000`
+   - You should see the Task Manager interface
+
+### Project Structure
