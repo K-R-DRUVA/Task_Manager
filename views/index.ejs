@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+<body>
+    <div class="main w-full min-h-screen bg-zinc-900">
+        <div class="container mx-auto px-4 py-8">
+            <div class="app-title-container">
+                <h1 class="app-title">Task Manager</h1>
+            </div>
+            
+            <form class="form mb-8" method="POST" action="/tasks">
+                <div class="input-container">
+                    <input type="text" name="title" id="title"  required>
+                    <label for="title">Task Title</label>
+                </div>
+                
+                <div class="textarea-container">
+                    <textarea name="description" id="description" required></textarea>
+                    <label for="description">Task Description</label>
+                </div>
+                
+                <div class="text-center">
+                    <input type="submit" value="Create Task" class="submit-btn px-6 py-3 rounded-lg text-white">
+                </div>
+            </form>
+
+            <h2 class="text-2xl font-bold mb-6 text-center">Tasks Created</h2>
+            
+            <div class="tasks-grid">
+                <% tasks.forEach(task => { %>
+                    <div class="task rounded-lg p-6">
+                        <h2 class="text-xl mb-2"><%= task.title %></h2>
+                        <p><%= task.description %></p>
+                    </div>
+                <% }); %>
+            </div>
+        </div>
+    </div>
+    <script src="/javascripts/script.js"></script>
+</body>
+</html>
